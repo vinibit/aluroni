@@ -1,16 +1,18 @@
-import React from 'react'
 import cardapio from 'data/cardapio.json'
 import styles from './Inicio.module.scss'
-import Menu from 'components/Menu'
+import temaStyles from 'styles/Tema.module.scss'
+import nossaCasa from 'assets/nossa_casa.png'
 
 export default function Inicio() {
 
   const pratosCaradapio = [ ...cardapio ]
-  const pratosRecomendados = pratosCaradapio.sort(() => Math.random() - 0.5).splice(0, 3)
+  const pratosRecomendados = pratosCaradapio.sort(() => Math.random() - 0.5).splice(0, 4)
 
   return (
     <section>      
-      <h3 className={styles.titulo}>Recomendações da cozinha</h3>
+      <h3 className={temaStyles.titulo}>
+        Sugestões do chefe
+      </h3>
       <div className={styles.recomendados}>
         {pratosRecomendados.map((prato) => (
           <div key={prato.id} className={styles.recomendado}>
@@ -22,6 +24,15 @@ export default function Inicio() {
             </button>
           </div>
         ))}
+      </div>
+      <h3 className={temaStyles.titulo}>
+        Nossa casa
+      </h3>
+      <div className={styles.nossaCasa}>
+        <img src={nossaCasa} alt="Casa do Aluroni" />
+        <div className={styles.nossaCasa__endereco}>
+          Rua Niterói, 238 <br /> São Vicente - SP 
+        </div>  
       </div>
     </section>
   )
