@@ -1,3 +1,4 @@
+import { PropsWithChildren } from 'react'
 import { Outlet } from 'react-router-dom'
 
 import styles from './DefaultPage.module.scss'
@@ -12,7 +13,7 @@ export default function DefaultPage() {
                 </div>
             </header>
             <div className={temaStyles.container}>
-                <Outlet />
+                <Outlet />                
             </div>
         </>
     )
