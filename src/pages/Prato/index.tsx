@@ -9,15 +9,15 @@ import NotFound from 'pages/NotFound'
 
 export default function Prato() {
     
-    const { id } = useParams()
-    const prato = cardapio.find(prato => prato.id === Number(id))
+  const { id } = useParams()
+  const prato = cardapio.find(prato => prato.id === Number(id))
 
-    return (
-        !prato ? <NotFound /> :
-            <Routes>
-                <Route path='*' element={<DefaultPage />}>
-                    <Route index element={<PratoDetalhes prato={prato} />} />
-                </Route>
-            </Routes>
-    )
+  return (
+    !prato ? <NotFound /> :
+      <Routes>
+        <Route path='*' element={<DefaultPage />}>
+          <Route index element={<PratoDetalhes prato={prato} />} />
+        </Route>
+      </Routes>
+  )
 }
