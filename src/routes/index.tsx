@@ -8,6 +8,7 @@ import Menu from 'components/Menu'
 import Footer from 'components/Layout/Footer'
 import NotFound from 'pages/NotFound'
 import Prato from 'pages/Prato'
+import Admin from 'pages/Admin'
 
 export default function AppRouter() {
   return (
@@ -22,6 +23,7 @@ export default function AppRouter() {
           </Route>
           <Route path='*' element={<NotFound />} />
           <Route path='prato/:id' element={<Prato />} />
+          <Route path='admin/:user' element={<Admin />} />
         </Routes>
         <Footer />
       </Router>

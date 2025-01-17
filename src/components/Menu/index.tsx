@@ -7,8 +7,9 @@ export default function Menu() {
     const routes = [
         { label: 'Início', path: "/" },
         { label: 'Cardápio', path: '/cardapio' },
-        { label: 'Sobre', path: '/sobre' }
-
+        { label: 'Sobre', path: '/sobre' },
+        { label: 'Admin', path: '/admin/vini' },
+        { label: 'Simple User', path: '/admin/dino' }
     ]
 
     return (
