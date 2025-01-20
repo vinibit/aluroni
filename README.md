@@ -1,3 +1,14 @@
+# Formação Alura - Gerencie aplicações React com Typescript
+
+## Projeto do Curso 2: Conhecendo a biblioteca React Router
+
+A aplicação "react-tasks" é um projeto de gerenciamento de cardápio de um restaurante chamado Aluroni. Ela permite que os usuários visualizem e filtrem pratos disponíveis no cardápio, vejam detalhes de cada prato, e naveguem por diferentes seções do site, como a página inicial, cardápio, sobre e uma página de administração. A aplicação é construída utilizando React com TypeScript e inclui funcionalidades como busca, filtros, ordenação e navegação entre páginas.
+
+Criado por Vini Bit.
+
+---------------------------------------------------------------------------------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
